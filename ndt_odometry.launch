@@ -1,0 +1,10 @@
+<!-- -->
+<launch>
+
+  <!-- rosrun ndt_odometry -->
+  <node pkg="ndt_odometry" type="ndt_odometry" name="ndt_odometry" output="log">
+    <remap from="points_raw" to="velodyne_points"/>	
+    <!--lidar_right/points-->
+  </node>
+  
+</launch>
